@@ -1,0 +1,1 @@
+This app is a powerful and versatile tool that can help organizations improve their employee appraisal process and boost employee performance.

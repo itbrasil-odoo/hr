@@ -1,0 +1,4 @@
+- [Cybrosys Techno solutions](https://www.cybrosys.com/)
+- [Open HRMS](https://www.openhrms.com)
+- [IT Brasil](https://itbrasil.com.br)
+  - Renan Teixeira \<<renan.teixeira@itbrasil.com.br>\>
