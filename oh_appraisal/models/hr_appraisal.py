@@ -172,6 +172,24 @@ class HrAppraisal(models.Model):
     check_done = fields.Boolean(
         copy=False, help="Will be true when the appraisal is done"
     )
+    state = fields.Selection(
+        [
+            ("new", "To Confirm"),
+            ("pending", "Confirmed"),
+            ("done", "Done"),
+            ("cancel", "Cancelled"),
+        ],
+        string="Status",
+        tracking=True,
+        required=True,
+        copy=False,
+        default="new",
+        index=True,
+        group_expand="_group_expand_states",
+    )
+
+    def _group_expand_states(self, states, domain, order):
+        return [key for key, val in self._fields["state"].selection]
 
     @api.constrains("appraisal_deadline")
     def _check_appraisal_deadline(self):

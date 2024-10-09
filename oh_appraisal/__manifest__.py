@@ -30,6 +30,7 @@
     "maintainer": "Cybrosys Techno Solutions",
     "website": "https://github.com/itbrasil-odoo/hr",
     "depends": ["hr", "survey"],
+    "excludes": ["hr_appraisal"],
     "data": [
         "security/oh_appraisal_groups.xml",
         "security/hr_appraisal_security.xml",
